@@ -4,6 +4,6 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = "my-unique-bucket-name"
+  bucket = "rohithtest_yeraa_bucket_test"
   acl    = "private"
 }
