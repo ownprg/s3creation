@@ -3,7 +3,11 @@ provider "aws" {
   version = "~> 3.0"
 }
 
-resource "aws_s3_bucket" "my_bucket" {
-  bucket = "rohithtest_yeraa_bucket_test"
-  acl    = "private"
+resource "aws_s3_bucket" "example" {
+  bucket = "rohithtestnewbucket-dev"
+
+  tags = {
+    Name        = "rohithtestnewbucket-dev"
+    Environment = "Dev"
+  }
 }
